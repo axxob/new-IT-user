@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad NAqib Portfolio</title>
+   <style>
+body {
+  background-color: olive;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+
+  
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FBEC5D;
+}
+
+nav button {
+  float: center;
+}
+
+nav button {
+  display: text;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav button:hover {
+  background-color: #FBEC5D;
+
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+nav button {
+  float: center;
+}
+
+nav {
+  display:text;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+img {
+    float: center;
+    margin-left: 150px;
+
+}
+
+p{ 
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+    <section id="home">
+        <div>
+            <h1>MY PORTFOLIO</h1>
+        </div>
+        
+        <nav>
+            <button onclick="showPage('github')">GITHUB</button>
+            <button onclick="showPage('linkedin')">LINKEDIN</button>
+        </nav>
+
+        <div>
+            <img src="https://i.nextmedia.com.au/Utils/ImageResizerWebP.ashx?n=https%3a%2f%2fi.nextmedia.com.au%2fFeatures%2fTitleist.jpg&h=600&w=850&c=0&s=1.png" alt="Logo">
+            
+            <h1>Muhammad Naqib Bin Kamarul Arifin</h1>
+            <p>My age is 26. I have 14 year experience in golf, i turn professional at 15 year old.
+I have been working with Titleist almost 5 year </Slot>.</p>
+        </div>
+    </section>
+
+    <section id="github" style="display: none;">
+        <div>
+            <button onclick="showPage('home')">BACK</button>
+            <h1>GITHUB</h1>
+        </div>
+        
+        <div>
+            <h3>Repository</h3>
+            <div>Education</div>
+            <div>Skill</div>
+            <div>DSGSDGDS</div>
+        </div>
+    </section>
+
+    <section id="linkedin" style="display: none;">
+        <div>
+            <button onclick="showPage('home')">BACK</button>
+            <h1>LINKEDIN</h1>
+        </div>
+        
+        <div>
+            <h3>Experience</h3>
+            <div>DSGSDGDS</div>
+            
+            <h3>Education</h3>
+            <div>DSGSDGDS</div>
+
+            <h3>Licenses & certifications</h3>
+            <div>DSGSDGDS</div>
+
+            <h3>Skills</h3>
+            <div>DSGSDGDS</div>
+        </div>
+    </section>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('github').style.display = 'none';
+            document.getElementById('linkedin').style.display = 'none';
+            
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
